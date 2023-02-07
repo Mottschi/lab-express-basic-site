@@ -4,10 +4,12 @@
     display: flex;
     justify-content: space-between;
     width: 100%;
+    
 }
 
 #navbar img {
     margin: 1rem;
+    height: 3rem;
 }
 
 #navbar ul {
