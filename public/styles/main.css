@@ -1,2 +1,43 @@
 @import url('reset.css');
 
+#navbar {
+    display: flex;
+    justify-content: end;
+    width: 100%;
+}
+
+#navbar ul {
+    display: flex;
+    list-style: none;
+}
+
+#navbar li {
+    margin: 1rem;
+}
+
+#navbar li a{
+    text-decoration: none;
+}
+
+#navbar li a:hover{
+    text-decoration: underline;
+}
+
+h1 {
+    text-align: center;
+}
+
+main {
+    width: 100%;
+    padding: 2rem;
+}
+
+.youtube-container {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+body {
+    background-color: #DCDCDC;
+}

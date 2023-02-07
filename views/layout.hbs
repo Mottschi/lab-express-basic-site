@@ -8,10 +8,10 @@
         {{#if title}}
             {{title}}
         {{ else }}
-            No Words
+            Terry Pratchett
         {{/if }}
     </title>
-    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="/styles/main.css">
     {{#if css}}
         {{#each css}}
             <link rel="stylesheet" href="styles/{{this}}.css">
@@ -21,6 +21,9 @@
 <body>
     {{> navbar }}
 
+
     {{{ body }}}
+
+    
 </body>
 </html>

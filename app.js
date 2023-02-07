@@ -27,18 +27,14 @@ app.get('/works', (req, res)=>{
 });
 
 app.get('/gallery', (req, res)=>{
-    res.render('gallery');
+    res.render('gallery', {css: ['gallery']});
 });
 
 app.get('*', (req, res)=>{
     res.render('error', {route: req.originalUrl});
 });
 
-
-
 // start server
-app.listen(PORT, (error)=> {
-    if (error) return console.log(error);
-
+app.listen(PORT, ()=> {
     console.log(`Server started. Listening at http://localhost:${PORT}`);
 })
