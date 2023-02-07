@@ -31,6 +31,8 @@ app.get('/gallery', (req, res)=>{
 });
 
 app.get('*', (req, res)=>{
+    res.status(404)
+    // res.statusCode = 404;
     res.render('error', {route: req.originalUrl});
 });
 
